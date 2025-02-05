@@ -21,7 +21,7 @@
 
         /* Page size */
         @page {
-            margin: 120px 0px 150px 0px; /* Top, Right, Bottom, Left */
+            margin: 90px 0px 0px 0px; /* Top, Right, Bottom, Left */
         }
 
         /* Header */
@@ -33,7 +33,7 @@
             height: 100px;
             background-color: #e7e7e3;
             border-bottom: 2px solid #ccc;
-            padding: 10px 20px;
+            padding: 10px 10px;
         }
 
         header table {
@@ -41,6 +41,9 @@
         }
 
         header .logo img {
+            position: absolute;
+            top: 28px;
+            left: 360px;
             height: 70px;
             width: 70px;
         }
@@ -57,13 +60,13 @@
         header h2 {
             color: #c00000;
             margin: 0;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         /* Footer */
         footer {
             position: fixed;
-            bottom: -100;
+            bottom: 0;
             left: 0;
             right: 0;
             height: 100px;
@@ -72,7 +75,6 @@
             text-align: center;
             font-size: 12px;
             color: #333;
-            /* padding: 20px; */
             box-sizing: border-box;
         }
 
@@ -124,7 +126,8 @@
 
         /* Contract Detalis */
         .detailed-needs {
-            margin-top: 20px;
+            text-align: left;
+            margin: 20px 70px 0px 10px; /* Top, Right, Bottom, Left */
         }
 
         /* Contract Details Paragraph */
@@ -136,7 +139,7 @@
         
         /* Signature Section Layout */
         .signature-section {
-            padding-top: 300px;
+            padding-top: 220px;
             vertical-align: bottom;
         }
 
@@ -167,8 +170,8 @@
             <tr>
                 <td>
                     <h2>Wahat Al-Tamayuz Contracting Co.</h2>
-                    <p style="margin: 15px 0px 0px 0px; font-size: 14px;">Commercial Registration Number: 1010753602</p>
-                    <p style="margin: 0px 0px 0px 0px; font-size: 14px;">Tax Number: 311078552200003</p>
+                    <p style="margin: 15px 0px 0px 0px; font-size: 12px;">Commercial Registration Number: 1010753602</p>
+                    <p style="margin: 0px 0px 0px 0px; font-size: 12px;">Tax Number: 311078552200003</p>
                 </td>
                 <td class="logo" style="text-align: ;">
                     <img src="C:\Users\Yahya\contractApp\logo.png" alt="Logo" class="logo" style="item-align: center;">
@@ -190,7 +193,7 @@
     <!-- Main Content -->
     <div class="container">
         <!-- Contract Title -->
-        <h1 class="highlight" style="text-align: center; margin: 30px 0px 30px; text-decoration: underline; text-underline-offset: 10px;">{{ $contract->contract_name }}</h1>
+        <h1 class="highlight" style="text-align: center; margin: 30px 80px 30px; text-decoration: underline; text-underline-offset: 10px;">{{ $contract->contract_name }}</h1>
 
         <!-- Contract Intro -->
         <div class="content">

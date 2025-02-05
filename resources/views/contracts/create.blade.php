@@ -102,7 +102,7 @@
                         </div>
 
                         <div class="form-group mb-3">
-                            <label for="contract_party_b_detailed_needs" class="form-label">Contract Second Party Detailed Needs</label>
+                            <label for="contract_party_b_detailed_needs" class="form-label">Contract Details</label>
                             <textarea name="contract_party_b_detailed_needs" id="contract_party_b_detailed_needs" class="form-control @error('contract_party_b_detailed_needs') is-invalid @enderror">{{ old('contract_party_b_detailed_needs') }}</textarea>
                             @error('contract_party_b_detailed_needs')
                                 <div class="invalid-feedback">{{ $message }}</div>
